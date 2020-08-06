@@ -1,10 +1,13 @@
 # multitasking-node-app
-##About This Application
+
+## About This Application
+
 This application performs various tasks on the basis of user commands entered into the terminal utilizing Node.js.Basically it adds,list out and delete the notes entered by user and provide the movie and song info on the basis of title entered by user.
 
 The commands and output are logged to a text file named notes.json.
 
-##How to Use It
+## How To Use It
+
 Users type in their commands by first typing node, the name of the Javascript file (in this case, app.js), and then one of the following commands:
 
 1.movie-info --title=<MOVIE_NAME> =  This command will access the OMBD API to return       information about a specific movie.
