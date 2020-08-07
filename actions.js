@@ -9,8 +9,8 @@ const key=process.env.Movie_API
 const songInfo=(title)=>{
    console.log(title);
    const spotify = new Spotify({
-    id: process.env.SPOTIFY_ID,
-    secret: process.env.SPOTIFY_SECRET
+    id: "78decad35f044a9188cf4c9bbf9378e3",
+    secret: "d3cc962aa14448a993ab879e8b15cc31"
   });
 
    spotify.search({ type: 'track', query: title }, function(err, data) {
@@ -42,7 +42,7 @@ const songInfo=(title)=>{
 //action to be performed by movie-info command
 const movieInfo=(title)=>{
     console.log("Movie Title : " + title);
-    axios.get("http://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey="+key)
+    axios.get("http://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=caf3a426")
     .then(response=>response)
     .then(response=>{
         if (response.status !== 200) {
